@@ -16,6 +16,21 @@ pipeline {
          
       }
     }
+    stage ('Run tests'){
+            steps{
+                sh 'npm test'
+            }
+        }
+        stage ('Deploy to Render'){
+            steps{
+                httpRequest (httpMode:'POST',responseHandle:'NONE',url:'https://api.render.com/deploy/srv-cftncmp4reb6ks0vs8u0?key=gzo0lOolY48',wrapAsMultiPart:false)
+            }
+        }
+        
+    
     
 }
 }
+
+
+  
