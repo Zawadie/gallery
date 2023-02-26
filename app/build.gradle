@@ -26,7 +26,11 @@ dependencies {
 
 application {
     // Define the main class for the application.
+<<<<<<< HEAD
     mainClass = 'gallery.App'
+=======
+    mainClass = 'my.first.project.App'
+>>>>>>> 92b7f8d05e460acbea448db840e458df7e0a7988
 }
 
 tasks.named('test') {
