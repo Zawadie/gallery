@@ -8,11 +8,11 @@ let index = require('./routes/index');
 let image = require('./routes/image');
 
 // connecting the database
-let mongodb_url = 'mongodb+srv://Zawadi000:lXSXLYJwsMDEADgi@cluster0.beyzcra.mongodb.net/?retryWrites=true&w=majority';
+let mongodb_url = 'mongodb+srv://Zawadi000:<i08MVeUp726i917Y>@cluster0.beyzcra.mongodb.net/?retryWrites=true&w=majority';
 let dbName = 'Cluster0';
 mongoose.connect(`${mongodb_url}${dbName}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
     if (err) console.log(err)
-});
+});np
 
 // test if the database has connected successfully
 let db = mongoose.connection;
